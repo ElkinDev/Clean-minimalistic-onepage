@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1034px" height="327px" viewBox="0 0 1034 327" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.411522072">
+        <g id="footer-prototype" transform="translate(0.000000, -15.000000)" fill="#03045E">
+            <g id="footer">
+                <g id="wavy-background">
+                    <g transform="translate(-0.000000, 0.000000)">
+                        <path d="M0,88.5194325 C65.0240553,24.4127681 158.021787,21.9577043 272.511193,24.4127681 C475.21851,24.3622894 669.318066,183.183874 853.15705,95.5953211 C943.27852,52.6576972 987.323554,25.6748571 1008.02503,19.4065447 C1017.56949,16.5165265 1028.83298,13.0235508 1030.68115,19.4065447 C1033.41762,28.8574487 1037.55784,66.2470515 1024,88.5194325 L1024,342 L707.168775,342 L0,342 L0,88.5194325 Z" id="Rectangle"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
