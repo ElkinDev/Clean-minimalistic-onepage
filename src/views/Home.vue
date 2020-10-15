@@ -1,7 +1,7 @@
 <template>
 
   <div class="home">
-      <div class="banner banner-home">
+      <div class="banner banner-home"  ref="banner-home">
         <div class="container">
           
           <div class="row justify-content-around align-items-center">
@@ -10,7 +10,7 @@
               <p>As an add-on service, we can also do your ironing, change beds and general tidying.</p>
             </div>
             <div class="col-lg-4 banner-form">
-                <b-card class="text-center card">
+                <b-card class="text-center card" ref="banner-form" id="banner-form" v-model="card">
                 <div class="">
                   <h3>Get a Quote!</h3>
                   <p>Or call us, we’d dicuss how we could help you</p>
@@ -170,8 +170,11 @@
 
 <script>
 // @ is an alias to /src
+import { TimelineLite } from 'gsap'
+
 
 export default {
+  
   name: 'Home',
 
   data() {
@@ -180,9 +183,10 @@ export default {
           email: '',
           name: '',
           food: null,
-          checked: []
+          checked: [],
+          card:null,
         },
-        foods: [{ text: 'Service Type', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
+        foods: [{ text: 'Service Type', value: null }, 'Swift Clean s', 'Regular Clean','other service'],
         show: true
       }
     },
@@ -204,7 +208,45 @@ export default {
           this.show = true
         })
       }
-    }
+    },
+     mounted() {
+
+      //  const { box } = this.$refs
+        //  var content = getComputedStyle(document.querySelector('.banner'), ':before')
+
+         const timeline = new TimelineLite()
+          timeline.to("#banner-form", 0, {
+            // y: 4,
+            autoAlpha:0,
+            // rotation: 100,
+            // ease: Back.easeInOut, // Specify an ease
+          },          '-=0' 
+          )
+    
+          timeline.to("#banner-form", 1.5, {
+            // y: 4,
+            scale:1.131,
+            autoAlpha:0,
+            // rotation: 100,
+            // ease: Back.easeInOut, // Specify an ease
+          })
+          timeline.to("#banner-form",1.4, {
+            // y: 0,
+            scale:1,
+            autoAlpha:1,
+
+            // rotation: 0,
+
+          },
+          
+          )
+
+
+    },
+    created() {
+    console.log('At this point, this.property is now reactive and propertyComputed will update.')
+    this.property = 'Example property updated.'
+  }
 }
 </script>
 
@@ -284,11 +326,16 @@ export default {
             }
         }
 
+     
+
 
          
        }
      }
 
+   #banner-form{
+
+        }
 
   .service-e{
     padding: 7em 0;

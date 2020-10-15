@@ -24,4 +24,16 @@ const router = new VueRouter({
   routes
 })
 
+router.beforeEach((to, from, next) => {
+
+  // console.log('beforeEach');
+  next();
+});
+
+router.beforeResolve(function(to, from, next) {
+  // How can I access the component here (this or vm)?
+  // console.log('beforeResolve');
+  next();
+});
+
 export default router

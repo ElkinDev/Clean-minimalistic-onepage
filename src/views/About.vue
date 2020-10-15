@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" >
         <div class="banner banner-about">
               <div class="container">
                 
@@ -165,7 +165,7 @@ export default {
           food: null,
           checked: []
         },
-        foods: [{ text: 'Service Type', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
+        foods: [{ text: 'Interested in', value: null }, 'Swift Cleaning', 'Regular cleaning'],
         show: true
       }
     },
@@ -187,7 +187,10 @@ export default {
           this.show = true
         })
       }
-    }
+    },
+    mounted() {
+      console.log('this is when kicks off')
+    },
 }
 </script> 
 

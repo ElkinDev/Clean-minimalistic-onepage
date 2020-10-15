@@ -16,8 +16,8 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav >
-                <b-nav-item to="/"  >
-                <div class="d-flex flex-row align-items-center">
+                <b-nav-item to="/"  class="call-us" >
+                <div class="d-flex flex-row align-items-center justify-content-center">
                 <span>
                     <svg width="45px" height="40px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 
@@ -33,7 +33,7 @@
                                     <g>
                                         <rect x="0" y="0" width="1024" height="65"></rect>
                                         <g id="e.-links" transform="translate(726.000000, 9.000000)">
-                                            <text id="Call-us-1800-333-333" font-family="Gilroy-Medium" font-size="14" font-weight="500" fill="#FFFFFF">
+                                            <text id="Call-us-1800-333-333"  font-family="Gilroy-Medium" font-size="14" font-weight="500" fill="#FFFFFF">
                                                 <tspan x="0" y="32.9047619">Call us 1800 333 333</tspan>
                                             </text>
                                             <g id="Group" transform="translate(147.000000, 0.000000)">
@@ -74,6 +74,27 @@
     </script>
 
     <!-- Add "scoped" attribute to limit CSS to this component only -->
-    <style scoped>
+<style  lang="scss">
+
+
+        #nav{
+            .nav-item{
+                .nav-link{
+                    text-shadow: 0 0 5px white;
+                }
+            }
+
+            .call-us{
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 865px) { 
+            .call-us{
+                text-align: right;
+            }
+
+
+        }
 
     </style>
