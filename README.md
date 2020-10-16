@@ -4,11 +4,14 @@
 
 ### Home
 
-![Test Image 4](https://github.com/ElkinDev/Clean-minimalistic-onepage/blob/master/src/assets/img/Desktop%20Protopy.png)
+![Home](https://github.com/ElkinDev/Clean-minimalistic-onepage/blob/master/src/assets/img/Desktop%20Protopy.png)
 
 
 
 ### Services
+
+![Services](https://github.com/ElkinDev/Clean-minimalistic-onepage/blob/master/src/assets/img/Services%20Prototype.png)
+
 
 ## Project setup
 ```
