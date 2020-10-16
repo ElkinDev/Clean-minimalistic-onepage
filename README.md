@@ -1,5 +1,15 @@
 # oz-clean-website
 
+## Desktop Protoypes
+
+### Home
+
+![Test Image 4](https://github.com/ElkinDev/Clean-minimalistic-onepage/blob/master/src/assets/img/Desktop%20Protopy.png)
+
+
+
+### Services
+
 ## Project setup
 ```
 npm install
