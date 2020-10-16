@@ -170,7 +170,7 @@
 
 <script>
 // @ is an alias to /src
-import { TimelineLite } from 'gsap'
+import { gsap } from 'gsap'
 
 
 export default {
@@ -214,27 +214,25 @@ export default {
       //  const { box } = this.$refs
         //  var content = getComputedStyle(document.querySelector('.banner'), ':before')
 
-         const timeline = new TimelineLite()
-          timeline.to("#banner-form", 0, {
+          gsap.timeline().to("#banner-form",{
             // y: 4,
             autoAlpha:0,
             // rotation: 100,
             // ease: Back.easeInOut, // Specify an ease
-          },          '-=0' 
-          )
-    
-          timeline.to("#banner-form", 1.5, {
+            duration:0
+          }
+          ).to("#banner-form", {
             // y: 4,
             scale:1.131,
             autoAlpha:0,
             // rotation: 100,
             // ease: Back.easeInOut, // Specify an ease
-          })
-          timeline.to("#banner-form",1.4, {
+            duration:1.5
+          }).to("#banner-form",{
             // y: 0,
             scale:1,
             autoAlpha:1,
-
+            duration:1.4
             // rotation: 0,
 
           },
